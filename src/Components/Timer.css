@@ -1,0 +1,133 @@
+#AppLayout {
+  width               : 70vh;
+  height              : 70vh;
+}
+
+  #timer {
+    position          : relative;
+    top               : 0px;
+    left              : 0px;
+    display           : flex;
+    flex-direction    : column;
+    justify-content   : center;
+    align-items       : center;
+    height            : 100%;
+    cursor            : default;
+  }
+
+    #timer .heading {
+      color           : #400000;
+      font-size       : 2.4rem;
+      font-weight     : 100; 
+      position        : relative;
+      top             : -10px;
+      margin          : 0;
+      padding         : 0;
+      z-index         : 2;
+    }
+
+    #timer .countdown {
+      color           : #fcfcfc;
+      font-size       : 8rem;
+      font-weight     : 100; 
+      position        : relative;
+      top             : -20px;
+      margin          : 0;
+      padding         : 0;
+      z-index         : 1;
+    }
+
+    #timer .session {
+      color           : #fce8e8;
+      font-size       : 2rem;
+      font-weight     : 100;
+      position        : relative;
+      top             : -30px;
+      margin          : 0;
+      padding         : 0;
+      z-index         : 6;
+    }
+
+    #Tomatin {
+      position        : absolute;
+    }
+
+    #timer-buttons {
+      text-align      : center;
+    }
+
+    #timer-buttons button {
+      outline         : none;
+    }
+
+@media only screen and ( max-width: 700px ) {
+  #Tomatin {
+    width             : 100vw;
+  }
+}
+
+@media only screen and ( max-width: 500px ) {
+  #timer p.heading {
+    font-size         : 1.8rem;
+  }
+
+  #timer .countdown {
+    font-size         : 5rem;
+  }
+
+  #timer .session {
+    font-size         : 1.6rem;
+  }
+
+  #timer-buttons button i {
+    font-size         : 5rem;
+  }
+
+  #timer-buttons button {
+    margin            : 0 0.5rem;
+    font-size         : 0;
+  }
+}
+
+@media only screen and ( max-height: 450px ) {
+  #Tomatin {
+    height            : 80vh;
+    width             : 100%;
+  }
+
+  #AppLayout {
+    width             : 100vw !important;
+    display           : flex;
+    flex-direction    : row; 
+  }
+
+  #timer {
+    width             : 60%;
+  }
+
+  #timer p.heading {
+    font-size         : 1.2rem;
+    margin-bottom     : 0.5rem;
+  }
+
+  #timer .countdown {
+    font-size         : 5rem;
+    margin-bottom     : 0.5rem;
+  }
+
+  #timer .session {
+    font-size         : 1.6rem;
+  }
+
+  #timer-buttons {
+    width             : 40%;
+    display           : flex;
+    flex-direction    : column;
+    justify-content   : center; 
+  }
+
+  #timer-buttons button {
+    margin            : 0.5rem;
+    font-size         : 7rem;
+  }
+}

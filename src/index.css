@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|PT+Sans+Narrow');
+
+*,
+*::before,
+*::after,
+:root {
+  margin        : 0;
+  padding       : 0;
+  box-sizing    : border-box;
+}
+
+html {
+  font-size     : 62.5%;
+}
+
+body {
+  margin        : 0;
+  padding       : 0;
+  width         : 100vw;
+  height        : 100vh;
+  font-family   : 'Permanent Marker', Arial, Helvetica, sans-serif;
+  font-weight   : normal;
+  background    : #5aac46;
+  background    : repeating-linear-gradient(
+                  90deg,
+                  #5aac46,
+                  #5aac46 10px,
+                  #5caf47 10px,
+                  #5caf47 20px
+                );
+}
+
+  #TomateTimer {
+    width       : 100vw;
+    height      : 100%;
+    overflow    : hidden;
+    display     : flex;
+  }
+
+button, button:link, button:visited {
+  color         : #fce8e8;
+  font-size     : 8rem;
+  background    : none;
+  border        : none;
+  padding       : 0;
+  margin        : 1rem;
+}
+
+button:hover {
+  color         : #CD1E25;
+  transition    : color 300ms;
+  cursor        : pointer;
+}
+
+.hidden {
+  display       : none;
+}
+
+.red {
+  color         : #CD1E25;
+  font-style    : normal;
+}
+
+.darker-red {
+  color         : #CD1E25;
+  font-style    : normal;
+}
+
+.green {
+  color         : #5aac46;
+  font-style    : normal;
+}
+
+

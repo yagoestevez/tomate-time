@@ -1,0 +1,40 @@
+footer {
+  color             : #fce8e8;
+  text-align        : center;
+  width             : 100%;
+  padding           : 1rem;
+  font-size         : 1.4rem;
+}
+
+  footer a:link, footer a:visited {
+    color           : #fce8e8;
+    transition      : color 300ms;
+    text-decoration : underline;
+  }
+
+  footer a:hover {
+    color           : #CD1E25;
+    text-decoration : none;
+  }
+  
+@media only screen and ( max-width: 500px ) {
+  footer {
+    padding           : 0 1rem 0.5rem 0 !important;
+  }
+
+  footer p {
+    font-size         : 1rem;
+    margin            : 0;
+  }
+}
+
+@media only screen and ( max-height: 450px ) {
+  footer {
+    padding           : 0 1rem 0.5rem 0 !important;
+  }
+
+  footer p {
+    font-size         : 1rem;
+    margin            : 0;
+  }
+}

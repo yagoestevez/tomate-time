@@ -1,0 +1,34 @@
+.contents-box-flex {
+  flex            : 0 0 auto;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : center;
+  width           : 100%;
+  height          : 100%;
+  transition      : transform 300ms;
+}
+
+.showMenu {
+  transform     : translateX(-100%);
+  transition    : transform 300ms;
+}
+
+#menu-btn {
+  color           : #fce8e8;
+  font-size       : 1.6rem;
+  background      : #428731;
+  width           : 3rem;
+  height          : 3rem;
+  position        : fixed;
+  top             : 5px;
+  right           : 10px;
+  cursor          : pointer;
+  z-index         : 100;
+}
+
+#menu-btn:hover {
+  color           : #fce8e8;
+  background      : #a3161b;
+  transition      : color 300ms, background 300ms;
+}

@@ -1,0 +1,105 @@
+/*****************************
+ *  SVG fills, strokes, etc  *
+ *****************************/
+
+.red-stroke {
+  fill          : none;
+  stroke        : #630c0c;
+  stroke-width  : 1px;
+}
+
+.bolder-stroke {
+  stroke-width  : 1.8px;
+}
+
+.shadow {
+  fill          : #400000;
+}
+
+.red-fill {
+  fill          : #630c0c;
+}
+
+.light-red-fill {
+  fill          : #dc0f17;
+}
+
+.lighter-red-fill {
+  fill          : #f12e35;
+}
+
+.dark-red-fill {
+  fill          : #ce0f17;
+}
+
+.green-fill {
+  fill          : #4d9e45;
+}
+
+.light-green-fill {
+  fill          : #5aac46;
+}
+
+.white-fill {
+  fill          : #fcfcfc;
+}
+
+.pink-fill {
+  fill          : #ef4958;
+}
+
+#Mini-Tomatin {
+  max-width: 550px;
+}
+
+#Speech-Balloon {
+  opacity: 1;
+  transition: 300ms;
+}
+
+/* Timer */
+#progress-indicator {
+  fill            : none;
+  stroke          : #70e953;
+  stroke-width    : 8px;
+  stroke-opacity  : 1;
+  opacity         : 1;
+}
+
+#progress-indicator.inactive {
+  stroke-opacity  : 0 !important;
+  stroke-dasharray    : 867.3883056640625;
+  stroke-dashoffset   : -867.3883056640625;
+}
+
+#progress-indicator.active {
+  stroke-opacity      : 1;
+  opacity             : 1;
+  stroke-dasharray    : 867.3883056640625;
+  stroke-dashoffset   : 867.3883056640625;
+}
+
+/* Dance */
+
+#Tomatin #Tomatin-Body.dance {
+  transform-origin    : 155px 150px;
+  animation           : dance 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+@keyframes dance {
+  0%   {
+    transform    : rotate( 0deg ) translate( 0px, 0px );
+  }
+  25%  {
+    transform    : rotate(-3deg ) translate( 0px, 2px );
+  }
+  50%  {
+    transform    : rotate( 0deg ) translate( 0px, 0px );
+  }
+  75%  {
+    transform    : rotate( 3deg ) translate( 0px, 2px );
+  }
+  100% {
+    transform    : rotate( 0deg ) translate( 0px, 0px );
+  }
+}
