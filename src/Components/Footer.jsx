@@ -22,7 +22,7 @@ const Footer = props => {
   * @var tweetURL The URL for tweeting, formated with own parameters.
   */
   const tweetURL = 'https://twitter.com/intent/tweet?'
-                 + 'hashtags=Pomodoro,Tomate,SVG,WebDesign,FreeCodeCamp,100daysofcode'
+                 + 'hashtags=Pomodoro,Tomate,SVG,WebDesign,FreeCodeCamp,100daysofcode,'
                  + 'Coders,Dev,React,Javascript'
                  + '&via=YagoEstevez'
                  + '&related=freecodecamp&text=' +
